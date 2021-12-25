@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_2"
+    android:backgroundTintMode="screen"
+    android:backgroundTint="#65AAA3A3"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="1.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!-- Create Information Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/titleApp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="14dp">
+
+        <!-- Rows 1 Columns 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sensor_id"
+            app:cardBackgroundColor="#BCFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="5"
+            android:layout_rowWeight="5"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/sensor_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Sensor Real-Time"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Rows 1 Columns 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/schedule_id"
+            app:cardBackgroundColor="#BCFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="5"
+            android:layout_rowWeight="5"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_baseline_schedule_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="90dp"
+                    android:text="Schedule Relay"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Rows 2 Columns 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/power_id"
+            app:cardBackgroundColor="#BCFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="5"
+            android:layout_rowWeight="5"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_baseline_power_settings_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="90dp"
+                    android:text="Power Relay"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Rows 2 Columns 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_id"
+            app:cardBackgroundColor="#BCFFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="5"
+            android:layout_rowWeight="5"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="0dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_baseline_info_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="90dp"
+                    android:text="About"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+</LinearLayout>

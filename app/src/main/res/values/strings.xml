@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AWP system apps</string>
+    <string name="titleApp">Automatic\nWatering of Plant</string>
+    <string name="sensor">Sensor\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="sensorName">1</string>
+    <string name="kelembaban">Kelembaban\t\t\t\t\t\t\t\t\t\t:</string>
+    <string name="dataSensor">100%</string>
+    <string name="tanggal_dan_waktu">Tanggal dan Waktu \t:</string>
+    <string name="example_datetime">31-12-2021 (23:59)</string>
+</resources>
